@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Personalized Email Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Email Generator</h1>
+        <form id="emailForm">
+            <label for="recipientName">Recipient's Name:</label>
+            <input type="text" id="recipientName" required>
+            
+            <label for="emailType">Email Type:</label>
+            <select id="emailType">
+                <option value="welcome">Welcome</option>
+                <option value="thankyou">Thank You</option>
+                <option value="followup">Follow Up</option>
+            </select>
+            
+            <label for="additionalInfo">Additional Information (Optional):</label>
+            <textarea id="additionalInfo"></textarea>
+
+            <button type="submit">Generate Email</button>
+        </form>
+
+        <h2>Generated Email:</h2>
+        <div id="generatedEmail"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
